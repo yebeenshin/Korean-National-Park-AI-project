@@ -27,8 +27,6 @@ def app():
     # folium 지도 객체에 Earth Engine 레이어 추가 메서드를 연결
     folium.Map.add_ee_layer = change.add_ee_layer
 
-    #ee.Initialize()    # GEE API를 초기화합니다.
-
     # # V-World 타일 서비스 URL (API 키 포함)
     # vworld_satellite_url = "http://api.vworld.kr/req/wmts/1.0.0/{api_key}/Satellite/{z}/{y}/{x}.jpeg"
     # vworld_hybrid_url = "http://api.vworld.kr/req/wmts/1.0.0/{api_key}/Hybrid/{z}/{y}/{x}.png"
@@ -54,7 +52,7 @@ def app():
                 3. 'submit' 버튼을 클릭하면 지표면 변화탐지 시작!
         ''')
     
-    ee.Initialize()    # GEE API를 초기화합니다.
+    #ee.Initialize()    # GEE API를 초기화합니다.
 
     tab1, tab2 = st.tabs(['국립공원 선택', 'GeoJson 파일 업로드'])
 
