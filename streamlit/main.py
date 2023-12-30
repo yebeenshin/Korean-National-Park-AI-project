@@ -7,12 +7,12 @@ from page import home, change_detection_1, change_detection_2, change_detection_
 import parks
 
 # 이미지 경로 설정
-image_path = "./image/knps2.png"
-bigleader_path = "./image/bigleader.png"
+image_path = "./streamlit/image/knps2.png"
+bigleader_path = "./streamlit/image/bigleader.png"
 
 def layout():
 
-    st.set_page_config(page_title="반달이의 눈 : 국립공원 관리 서비스", page_icon='./image/eye.png', layout="wide")
+    st.set_page_config(page_title="반달이의 눈 : 국립공원 관리 서비스", page_icon='./streamlit/image/eye.png', layout="wide")
 
     # 로고 이미지 첨부(이미지 파일을 텍스트 형식으로 변환하는 함수를 정의)
     def get_image_base64(image_path):
