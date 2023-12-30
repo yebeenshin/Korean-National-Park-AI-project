@@ -52,7 +52,7 @@ def app():
                 3. 'submit' 버튼을 클릭하면 지표면 변화탐지 시작!
         ''')
     
-    geemap.Initialize()    # GEE API를 초기화합니다.
+    geemap.ee.Initialize()    # GEE API를 초기화합니다.
 
     tab1, tab2 = st.tabs(['국립공원 선택', 'GeoJson 파일 업로드'])
 
