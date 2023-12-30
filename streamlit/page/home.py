@@ -17,7 +17,7 @@ def app():
         return "data:image/png;base64," + encoded_string
 
     # 2.이미지 파일을 Base64로 인코딩(그냥 경로 복붙은 작동 안됨)
-    encoded_image1 = get_image_base64("./image/homepage.png")
+    encoded_image1 = get_image_base64("./streamlit/image/homepage.png")
 
     st.title("반달이의 눈 : 국립공원 관리 서비스")
 
