@@ -90,7 +90,6 @@ psutil==5.9.5
 pure-eval==0.2.2
 pyarrow==11.0.0
 pyasn1-modules==0.2.8
-pycurl==7.45.2
 pydeck==0.8.1b0
 PyDispatcher==2.0.5
 Pygments==2.15.1
