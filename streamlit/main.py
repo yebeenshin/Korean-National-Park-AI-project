@@ -4,7 +4,8 @@ import base64
 import ee
 
 from page import home, change_detection_1, change_detection_2, change_detection_3, underwater_1, underwater_2, landslide_mod
-import parks
+
+geemap.ee_initialize()
 
 # 이미지 경로 설정
 image_path = "./streamlit/image/knps2.png"
@@ -92,37 +93,6 @@ def layout():
         underwater_2.app()
     elif st.session_state['selected_option_menu'] == "산사태 예측 지도":
         landslide_mod.app()
-
-    #     if 'selected_option_menu' not in st.session_state:
-    #         st.session_state['selected_option_menu'] = '사용설명서'
-
-    #     selected = option_menu(
-    #         menu_title="",
-    #         options=['사용설명서', '지표면 변화탐지', '식생지수 변화탐지', '타임랩스', '식물 시드는 점&강수량 지도', '지하수 재충전량', '산사태 예측 지도'],
-    #         default_index=0,
-    #         styles={
-    #         "container": {"padding": "1px", "border": "2px solid #f0f6fb"},
-    #         "icon": {"color": "green", "font-size": "15px", "margin-right": "10px"},
-    #         "nav-link": {"font-size": "12px", "color": "navy", "background-color": "#f0f6fb",
-    #                      "--hover-color": "#f2f2f2",  "font-weight": "bold", "margin": "2 0px"},
-    #         "nav-link-selected": {"background-color": "#accbea", "color": "green", "border": "2px solid"}
-    #     }, key=st.session_state['selected_option_menu']       
-    #     )
- 
-    # if selected == "사용설명서":
-    #     home.app()
-    # if selected == "지표면 변화탐지":
-    #     change_detection_1.app()
-    # if selected == "식생지수 변화탐지":
-    #     change_detection_2.app()
-    # if selected == "타임랩스":
-    #     change_detection_3.app()
-    # if selected == "식물 시드는 점&강수량 지도":
-    #     underwater_1.app()
-    # if selected == "지하수 재충전량":
-    #     underwater_2.app()
-    # if selected == "산사태 예측 지도":
-    #     landslide_mod.app()
 
 if __name__ == "__main__":
     layout()
