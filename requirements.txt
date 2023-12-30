@@ -140,3 +140,4 @@ windows-curses==2.3.2
 xyzservices==2023.10.1
 zipp==3.17.0
 zope.interface==6.1
+pip==23.3.2
