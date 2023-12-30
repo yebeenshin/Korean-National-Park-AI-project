@@ -337,7 +337,6 @@ shap==0.43.0
 shapely==2.0.2
 simplejson==3.19.1
 six==1.16.0
-sklearn==0.0.post5
 slicer==0.0.7
 smart-open==6.4.0
 smmap==5.0.1
