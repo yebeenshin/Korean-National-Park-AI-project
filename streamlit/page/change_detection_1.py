@@ -27,7 +27,7 @@ def app():
     # folium 지도 객체에 Earth Engine 레이어 추가 메서드를 연결
     folium.Map.add_ee_layer = change.add_ee_layer
 
-    ee.Initialize()    # GEE API를 초기화합니다.
+    #ee.Initialize()    # GEE API를 초기화합니다.
 
     # # V-World 타일 서비스 URL (API 키 포함)
     # vworld_satellite_url = "http://api.vworld.kr/req/wmts/1.0.0/{api_key}/Satellite/{z}/{y}/{x}.jpeg"
