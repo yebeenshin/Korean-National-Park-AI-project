@@ -342,8 +342,6 @@ streamlit-folium==0.15.1
 streamlit-option-menu==0.3.6
 sympy==1.12
 tenacity==8.2.2
-tensorboard==2.14.1
-tensorboard-data-server==0.7.1
 termcolor==2.3.0
 terminado==0.17.1
 thinc==8.1.12
