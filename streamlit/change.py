@@ -627,8 +627,8 @@ def add_park_boundaries(my_map, park_name):
 
 def get_region_data(region):
     if region == '수도권':
-        model_average_file = './streamlit/권역별pkl/ModelAverage_수도권ver1.pkl'
-        data_file = './streamlit/권역별pkl/AcuallyData_수도권ver1.pkl'
+        model_average_file = '권역별_pkl\\ModelAverage_수도권ver1.pkl'
+        data_file = '권역별_pkl\\AcuallyData_수도권ver1.pkl'
         threshold = 0.4416666666666666
         variables = ['bare', 'crops', 'VV', 'built', 'water', 'slope', 'aspect', 'elevation']
         importance = [2.72, 5.53, 5.78, 6.13, 6.71, 18.26, 21.09, 28.88]
@@ -636,8 +636,8 @@ def get_region_data(region):
         auc_pr = 0.842519
 
     elif region == '영남권':
-        model_average_file = './streamlit/권역별pkl/ModelAverage_영남권ver1.pkl'
-        data_file = './streamlit/권역별pkl/AcuallyData_영남권ver1.pkl'
+        model_average_file = '권역별_pkl\\ModelAverage_영남권ver1.pkl'
+        data_file = '권역별_pkl\\AcuallyData_영남권ver1.pkl'
         threshold = 0.5083333333333333
         variables = ['water', 'aspect', 'built', 'trees', 'crops', 'slope', 'elevation']
         importance = [9.82, 10.88, 11.67, 15.44, 24.36, 29.39, 39.43]
@@ -645,8 +645,8 @@ def get_region_data(region):
         auc_pr = 0.734642
 
     elif region == '호남권':
-        model_average_file = './streamlit/권역별pkl/ModelAverage_호남권ver1.pkl'
-        data_file = './streamlit/권역별pkl/AcuallyData_호남권ver1.pkl'
+        model_average_file = '권역별_pkl\\ModelAverage_호남권ver1.pkl'
+        data_file = '권역별_pkl\\AcuallyData_호남권ver1.pkl'
         threshold = 0.6083333333333332
         variables = ['water', 'susm', 'aspect', 'built', 'slope', 'trees', 'crops', 'elevation']
         importance = [5.13, 5.14, 5.96, 6.00, 10.54, 15.52, 20.95, 26.86]
@@ -654,8 +654,8 @@ def get_region_data(region):
         auc_pr = 0.861038
 
     elif region == '충청권':
-        model_average_file = './streamlit/권역별pkl/ModelAverage_충청권ver1.pkl'
-        data_file = './streamlit/권역별pkl/AcuallyData_충청권ver1.pkl'
+        model_average_file = '권역별_pkl\\ModelAverage_충청권ver1.pkl'
+        data_file = '권역별_pkl\\AcuallyData_충청권ver1.pkl'
         threshold = 0.5166666666666666
         variables = ['aspect', 'grass', 'water', 'built', 'crops', 'slope', 'trees', 'elevation']
         importance = [2.65, 4.11, 4.85, 15.27, 15.43, 22.91, 28.53, 29.89]
@@ -663,8 +663,8 @@ def get_region_data(region):
         auc_pr = 0.825055
 
     else:  # 강원권
-        model_average_file = './streamlit/권역별pkl/ModelAverage_강원권ver1.pkl'
-        data_file = './streamlit/권역별pkl/AcuallyData_강원권ver1.pkl'
+        model_average_file = '권역별_pkl\\ModelAverage_강원권ver1.pkl'
+        data_file = '권역별_pkl\\AcuallyData_강원권ver1.pkl'
         threshold = 0.4499999999999999
         variables = ['water', 'aspect', 'slope', 'trees', 'crops', 'built', 'elevation']
         importance = [2.11, 2.14, 3.28, 3.86, 5.40, 5.99, 11.15]
