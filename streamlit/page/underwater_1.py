@@ -21,15 +21,13 @@ import matplotlib.font_manager as fm
 
 def app():
 
-    # font_path = './streamlit/font/NanumGothic.ttf'
-    # # 폰트 프로퍼티 설정
-    # font_prop = fm.FontProperties(fname=font_path, size=12)
-    # # matplotlib의 폰트를 설정
-    # plt.rcParams['font.family'] = font_prop.get_name()
-
-    font_path = './streamlit/font/NanumGothic.ttf' 
-    fm.fontManager.addfont(font_path)
-    mpl.rcParams['font.family'] = 'NanumGothic'
+    font_path = './streamlit/font/NanumGothic.ttf'
+    
+    # 폰트 프로퍼티 설정
+    font_prop = fm.FontProperties(fname=font_path, size=12)
+    
+    # matplotlib의 폰트를 설정
+    plt.rcParams['font.family'] = font_prop.get_name()
 
     # 페이지 제목 설정
     st.title("수자원 관리 : 강수 및 지하수 분석")
