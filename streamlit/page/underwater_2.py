@@ -44,9 +44,6 @@ def app():
                 2. 관측 시작/끝 날짜를 선택한 후 'submit' 버튼을 클릭하면 토양 프로파일링 시작!
                 3. 깊이에 따른 토양 성분 그래프와 깊이에 따른 토양 수분 특성 그래프가 그려집니다.
                 """)
-    
-    # Initialize the Earth Engine module.
-    ee.Initialize()
 
     national_parks = parks.get_parks()
 
