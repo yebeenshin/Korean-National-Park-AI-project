@@ -73,7 +73,6 @@ def app():
         
         with st.spinner("산사태 예측지도 생성 중입니다! 약 5분 정도 소요됩니다."):                
             national_parks = parks.get_parks()
-            ee.Initialize()
             
             # 파일 로드
             ModelAverage = pd.read_pickle(model_average_file)
