@@ -49,9 +49,6 @@ def app():
                 3. 'submit' 버튼을 클릭하면 관심 지역의 강수 및 지하수 분석을 시작합니다.
                 """)
 
-    # Initialize the Earth Engine module.
-    ee.Initialize()
-
     national_parks = parks.get_parks()
 
     tab1, tab2 = st.tabs(['국립공원 선택', 'GeoJson 파일 업로드'])
