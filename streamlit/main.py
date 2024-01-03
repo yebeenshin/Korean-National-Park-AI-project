@@ -22,6 +22,8 @@ def layout():
     encoded_image = get_image_base64(image_path)
     bigleader_encoded_image = get_image_base64(bigleader_path)
 
+    geemap.ee_initialize()    # GEE API를 초기화합니다.
+
     # # HTML과 함께 이 텍스트 형식의 이미지들을 웹 페이지에 표시
     # st.markdown(f"""
     #     <div style="display: flex; margin-top: 0em; align-items: left;">
