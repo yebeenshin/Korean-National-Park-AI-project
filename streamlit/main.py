@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu 
 import base64
 import ee
+import geemap
 
 from page import home, change_detection_1, change_detection_2, change_detection_3, underwater_1, underwater_2, landslide_mod
 
