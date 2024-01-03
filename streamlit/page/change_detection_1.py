@@ -51,8 +51,6 @@ def app():
                 2. 탐지 기간을 설정합니다.
                 3. 'submit' 버튼을 클릭하면 지표면 변화탐지 시작!
         ''')
-    
-    geemap.ee_initialize()    # GEE API를 초기화합니다.
 
     tab1, tab2 = st.tabs(['국립공원 선택', 'GeoJson 파일 업로드'])
 
